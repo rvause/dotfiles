@@ -1,0 +1,18 @@
+[submodule "_vim/bundle/csapprox"]
+	path = _vim/bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
+[submodule "_vim/bundle/python-syntax"]
+	path = _vim/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
+[submodule "_vim/bundle/jedi-vim"]
+	path = _vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "_vim/bundle/supertab"]
+	path = _vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "_vim/bundle/ctrp.vim"]
+	path = _vim/bundle/ctrp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "_vim/bundle/python-indent.vim"]
+	path = _vim/bundle/python-indent.vim
+	url = https://github.com/hattya/python-indent.vim.git

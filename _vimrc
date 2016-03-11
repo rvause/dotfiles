@@ -86,6 +86,9 @@ set smarttab
 set hlsearch
 set incsearch
 
+" colorscheme
+colorscheme idle
+
 " Paste
 map <leader>p "+p
 
@@ -111,3 +114,35 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" Virtual env
+if has('python')
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+endif
+
+" jedi-vim settings
+autocmd FileType python setlocal completeopt-=preview " Disable popup during completion
+
+" python-syntax settings
+let g:python_syntax_all=1
+
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
+" ctrlp
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
