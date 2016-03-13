@@ -131,6 +131,7 @@ endif
 
 " jedi-vim settings
 autocmd FileType python setlocal completeopt-=preview " Disable popup during completion
+let g:jedi#show_call_signatures = "0" " Disable annoying call signatures
 
 " python-syntax settings
 let g:python_syntax_all=1
@@ -140,9 +141,6 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " ctrlp
 if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  set grepprg=ag\ --nogroup\ --nocolor " Use Ag over Grep
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'  " Use ag in CtrlP for listing files.
 endif
