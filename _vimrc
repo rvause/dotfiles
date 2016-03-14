@@ -99,7 +99,8 @@ nnoremap <leader><space> :nohlsearch<cr>
 nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 "
 " HTML
-autocmd FileType html,xhtml,xml,css setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+autocmd FileType html,xhtml,xml,css,mobi setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+au BufRead,BufNewFile *.mobi set filetype=html
 
 " Python
 "au FileType python set omnifunc=pythoncomplete#Complete
