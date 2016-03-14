@@ -16,3 +16,6 @@
 [submodule "_vim/bundle/python-indent.vim"]
 	path = _vim/bundle/python-indent.vim
 	url = https://github.com/hattya/python-indent.vim.git
+[submodule "_vim/bundle/jinja2-syntax"]
+	path = _vim/bundle/jinja2-syntax
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
