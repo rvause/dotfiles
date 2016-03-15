@@ -31,6 +31,7 @@ set wildmode=full
 
 set noerrorbells
 set vb t_vb=
+au GUIEnter * set vb t_vb=
 
 set wildignore+=*.o,*.obj,.git,*.pyc
 set wildignore+=eggs/**
@@ -69,7 +70,6 @@ set modelines=5
 set ffs=unix,dos,mac
 
 set ls=2
-set vb t_vb=
 set confirm
 set showcmd
 set report=0
@@ -89,6 +89,14 @@ set incsearch
 " colorscheme
 colorscheme idle
 
+if has("gui_running")
+    colorscheme idle
+    set guioptions=
+    set vb t_vb=
+else
+    colorscheme zellner
+endif
+
 " Paste
 map <leader>p "+p
 
@@ -103,9 +111,12 @@ autocmd FileType html,xhtml,xml,css,mobi setlocal expandtab shiftwidth=4 tabstop
 au BufRead,BufNewFile *.mobi set filetype=html
 
 " Python
-"au FileType python set omnifunc=pythoncomplete#Complete
+" au FileType python set omnifunc=pythoncomplete#Complete
 au FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\]%\\@=%m
+
+" Yaml
+au FileType yaml setlocal expandtab softtabstop=2 shiftwidth=2 tabstop=4 smartindent
 
 " Trim whitespace on save
 fun! <SID>StripTrailingWhitespaces()
