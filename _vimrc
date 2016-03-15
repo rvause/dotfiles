@@ -86,15 +86,12 @@ set smarttab
 set hlsearch
 set incsearch
 
-" colorscheme
-colorscheme idle
-
 if has("gui_running")
-    colorscheme idle
+    colorscheme wombat
     set guioptions=
     set vb t_vb=
 else
-    colorscheme zellner
+    colorscheme molokai
 endif
 
 " Paste
