@@ -91,7 +91,7 @@ if has("gui_running")
     set guioptions=
     set vb t_vb=
 else
-    colorscheme molokai
+    colorscheme wombat256i
 endif
 
 " Paste
@@ -141,9 +141,6 @@ endif
 " jedi-vim settings
 autocmd FileType python setlocal completeopt-=preview " Disable popup during completion
 let g:jedi#show_call_signatures = "0" " Disable annoying call signatures
-
-" python-syntax settings
-let g:python_syntax_all=1
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
