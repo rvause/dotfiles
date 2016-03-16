@@ -61,6 +61,7 @@ set shiftround
 set matchpairs+=<:>
 set foldmethod=indent
 set foldlevel=99
+set colorcolumn=80
 
 set noautowrite
 set noautowriteall
@@ -92,6 +93,7 @@ if has("gui_running")
     set vb t_vb=
 else
     colorscheme wombat256i
+    highlight ColorColumn ctermbg=8
 endif
 
 " Paste
