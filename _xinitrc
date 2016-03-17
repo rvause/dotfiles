@@ -1,7 +1,7 @@
 export TERMINAL=sakura
 srandrd /home/rvause/bin/detect_displays.sh  # Update on VGA plug/unplug
 dunst &  # Notifications
-# polipo -c ~/.poliporc &  # Caching proxy server localhost:8123
 redshift &  # Easy on the eyes
-setxkbmap pl  # pl keyboard layout
+unclutter -idle 2 &  # Hide mouse cursor
+setxkbmap -layout pl  # pl keyboard layout
 exec i3
