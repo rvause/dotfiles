@@ -15,6 +15,9 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" Delete buffer without messing with splits http://stackoverflow.com/a/8585343
+nmap <leader>cb :bp<bar>sp<bar>bn<bar>bd<CR>
+
 imap <C-W> <C-O><C-W>
 
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
