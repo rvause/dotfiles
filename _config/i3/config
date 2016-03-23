@@ -165,6 +165,9 @@ bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 # screenshot
 bindsym $mod+Shift+p exec "scrot -m -q 100 '/home/rvause/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'
 
+# lock
+bindsym XF86ScreenSaver exec "xautolock -locknow"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
