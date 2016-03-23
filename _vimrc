@@ -7,6 +7,7 @@ set nocompatible
 let mapleader=","
 
 nmap <leader>8 :call Flake8()<CR>
+nmap <leader>c :cclose<CR>
 
 " Changing Window Splits
 map <c-j> <c-w>j

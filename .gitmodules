@@ -16,3 +16,6 @@
 [submodule "_vim/bundle/vim-indent-guides"]
 	path = _vim/bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "_vim/bundle/vim-flake8"]
+	path = _vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
