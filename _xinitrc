@@ -4,5 +4,5 @@ dunst &  # Notifications
 redshift &  # Easy on the eyes
 unclutter -idle 2 -keystroke &  # Hide mouse cursor
 setxkbmap -layout pl  # pl keyboard layout
-xautolock -time 5 -locker "i3lock -i /home/rvause/Pictures/i3lock.png" -detectsleep &
+xautolock -time 5 -locker "i3lock -i /home/rvause/Pictures/i3lock.png -d" -detectsleep &
 exec i3
