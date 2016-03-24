@@ -163,7 +163,9 @@ bindsym XF86AudioMute exec amixer set Master 1+ toggle # mute sound
 bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 
 # screenshot
-bindsym $mod+Shift+p exec "scrot -m -q 100 '/home/rvause/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'
+bindsym --release $mod+Shift+Print exec "scrot -s -q 100 '/home/rvause/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+bindsym --release $mod+Print exec "scrot -m -q 100 '/home/rvause/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+bindsym $mod+Shift+w exec "scrot -u -q 100 '/home/rvause/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
 
 # lock
 bindsym XF86ScreenSaver exec "xautolock -locknow"
