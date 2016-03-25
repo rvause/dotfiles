@@ -65,7 +65,7 @@ set shiftround
 set matchpairs+=<:>
 set foldmethod=indent
 set foldlevel=99
-set colorcolumn=80
+set colorcolumn=73,80
 
 set noautowrite
 set noautowriteall
