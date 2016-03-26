@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+xcalib -d :0 $HOME/.tpd.icm
