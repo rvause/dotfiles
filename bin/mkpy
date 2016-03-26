@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+
+import os
+import sys
+
+
+class ProgramError(Exception):
+    pass
+
+
+def create_dir(path):
+    print('Making dir {}'.format(path))
+    os.mkdir(path, 0755)
+
+
+def create_init(path):
+    print('Adding __init__.py to {}'.format(path))
+    open(os.path.join(path, '__init__.py'), 'a').close()
+
+
+def main():
+    try:
+        path = sys.argv[1]
+    except IndexError:
+        raise ProgramError('Missing argument')
+
+    print('Creating module {}'.format(path))
+
+    parts = [p for p in path.split('/') if p]
+    if path.startswith('/'):
+        current_path = '/'
+    else:
+        current_path = os.getcwd()
+
+    for part in parts:
+        current_path = os.path.join(current_path, part)
+        if not os.path.exists(current_path):
+            create_dir(current_path)
+        else:
+            if not os.path.isdir(current_path):
+                raise ProgramError('{} exists and is not a directory'.format(current_path))
+        create_init(current_path)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except ProgramError:
+        sys.exit(1)
+    sys.exit(0)
+
