@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo openvpn --writepid /var/run/openvpn.pid --config $1
