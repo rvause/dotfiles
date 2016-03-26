@@ -6,9 +6,8 @@
 git clone --recursive https://github.com/rvause/dotfiles.git ~/.dotfiles
 ```
 
-Then link files. Vim for example:
+Then link files.
 
 ```
-ln -sf $HOME/.dotfiles/_vimrc $HOME/.vimrc
-ln -sf $HOME/.dotfiles/_vim $HOME/.vim
+./link.sh
 ```
