@@ -110,7 +110,7 @@ nnoremap <leader><space> :nohlsearch<cr>
 nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 "
 " HTML
-autocmd FileType html,xhtml,xml,css,mobi setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+autocmd FileType html,xhtml,xml,css,mobi,jinja setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 wrap
 au BufRead,BufNewFile *.mobi set filetype=html
 
 " Python
@@ -128,7 +128,7 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,javascript,css,html autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " Virtual env
 if has('python')
