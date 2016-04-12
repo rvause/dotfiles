@@ -66,6 +66,7 @@ set matchpairs+=<:>
 set foldmethod=indent
 set foldlevel=99
 set colorcolumn=73,80
+set mouse=a
 
 set noautowrite
 set noautowriteall
