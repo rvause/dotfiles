@@ -7,7 +7,7 @@
 ! URxvt*jumpScroll:                     boolean
 ! URxvt*skipScroll:                     boolean
 ! URxvt*pastableTabs:                   boolean
-! URxvt*scrollstyle:                    mode
+URxvt*scrollstyle: rxvt
 URxvt*scrollBar: false
 ! URxvt*scrollBar_right:                boolean
 ! URxvt*scrollBar_floating:             boolean
@@ -67,7 +67,8 @@ URxvt*cursorBlink: true
 ! URxvt*pointerColor2:                  color
 ! URxvt*borderColor:                    color
 ! URxvt*iconFile:                       file
-URxvt*font: xft:inconsolata:size=11
+urxvt*font: xft:inconsolata:size=11:antialias=true:hinting=true
+urxvt*boldFont: xft:inconsolata:size=11:style=bold:antialias=true:hinting=true
 ! URxvt*boldFont:                       fontname
 ! URxvt*italicFont:                     fontname
 ! URxvt*boldItalicFont:                 fontname
@@ -86,10 +87,10 @@ URxvt*font: xft:inconsolata:size=11
 ! URxvt*override-redirect:              boolean
 ! URxvt*hold:                           boolean
 ! URxvt*externalBorder:                 number
-! URxvt*internalBorder:                 number
-! URxvt*borderLess:                     boolean
+URxvt*internalBorder: 0
+! URxvt*borderLess: true
 ! URxvt*lineSpace:                      number
-! URxvt*letterSpace:                    number
+urxvt*letterSpace: -1
 ! URxvt*skipBuiltinGlyphs:              boolean
 ! URxvt*pointerBlankDelay:              number
 ! URxvt*backspacekey:                   string
@@ -131,49 +132,48 @@ URxvt*font: xft:inconsolata:size=11
 ! URxvt*tabbar-fg:                      colour
 ! URxvt*url-launcher:                   string
 
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+
 ! vim: set filetype=xdefaults :
 
-! --- special colors ---
-
-*background: #000000
-*foreground: #d9e6f2
-
-! --- standard colors ---
+! Colors
+URxvt*background: #000000
+URxvt*foreground: #B2B2B2
 ! black
-*color0: #000000
-! bright_black
-*color8: #2c2c2c
+URxvt*color0:  #000000
+URxvt*color8:  #686868
 ! red
-*color1: #dc2323
-! bright_red
-*color9: #ffffff
+URxvt*color1:  #B21818
+URxvt*color9:  #FF5454
 ! green
-*color2: #23dc23
-! bright_green
-*color10: #ffffff
+URxvt*color2:  #18B218
+URxvt*color10: #54FF54
 ! yellow
-*color3: #dcdc23
-! bright_yellow
-*color11: #ffffff
+URxvt*color3:  #B26818
+URxvt*color11: #FFFF54
 ! blue
-*color4: #2323dc
-! bright_blue
-*color12: #ffffff
-! magenta
-*color5: #dc23dc
-! bright_magenta
-*color13: #ffffff
+URxvt*color4:  #1818B2
+URxvt*color12: #5454FF
+! purple
+URxvt*color5:  #B218B2
+URxvt*color13: #FF54FF
 ! cyan
-*color6: #23dcdc
-! bright_cyan
-*color14: #ffffff
+URxvt*color6:  #18B2B2
+URxvt*color14: #54FFFF
 ! white
-*color7: #d1d1d1
-! bright_white
-*color15: #ffffff
+URxvt*color7:  #B2B2B2
+URxvt*color15: #FFFFFF
 
-URxvt*borderColor:        #151515
+URxvt*borderColor:        #000000
 URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #ff8939
-URxvt*cursorColor2:       #151515
+urxvt*cursorColor: #ff8939
+urxvt*cursorColor2: #151515
 
+!-*-{ Xft settings
+Xft*dpi:       97
+Xft*antialias: True
+Xft*hinting:   Full
+!!-*-}
