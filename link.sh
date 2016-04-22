@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-FILES="_vimrc _vim _xinitrc _Xdefaults _config"
+FILES="_vimrc _vim _xinitrc _Xdefaults _config _taskrc"
 BINFILES="$(pwd)/bin/*"
 
 for file in $FILES
@@ -8,7 +8,7 @@ do
     src=$(pwd)/$file
     dest="$HOME/$_file"
     echo "$src -> $dest"
-    ln -sf $file "$dest"
+    ln -sf $src "$dest"
 done
 
 for file in $BINFILES
