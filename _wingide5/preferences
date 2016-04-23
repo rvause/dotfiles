@@ -1,0 +1,70 @@
+[user-preferences]
+debug.debug-probe-encoding = 'ascii'
+debug.prompt-to-restart-python-shell-debug = False
+edit.auto-edit-fixups = False
+edit.auto-edit-spaces = True
+edit.auto-edit-spaces-enforce = True
+edit.autocomplete-keys = ['tab',
+                          'return']
+edit.caret-color = (247,
+                    137,
+                    10)
+edit.caret-line-highlight = ((112,
+                              112,
+                              221),
+                             50)
+edit.context-menu-groups = ['clip',
+                            'nav',
+                            'debug',
+                            'comment',
+                            'indent',
+                            'script']
+edit.enable-folding = False
+edit.ensure-ending-eol-on-save = True
+edit.other-split-type = 'default'
+edit.qt-display-font = u'Inconsolata,11'
+edit.qt-show-edge-markers = (1,
+                             80,
+                             None)
+edit.show-indent-guides = True
+edit.show-line-numbers = True
+edit.snippets-in-autocompleter = False
+edit.syntax-formatting = {'PYTHON': {u'decorator': {'fore': '#FAA13A'}}}
+gui.all-editors-in-all-splits = False
+gui.keymap-override = {'Ctrl-8': 'flake8',
+                       'Ctrl-9': 'isort',
+                       'Ctrl-Shift-W': 'kill-buffer'}
+gui.qt-color-palette = u'monokai'
+gui.qt-display-theme = ('selected-colors',
+                        None,
+                        u'Windows',
+                        None)
+gui.qt-text-selection-color = (97,
+                               96,
+                               82)
+gui.startup-show-wingtips = 0
+gui.toolbar-icon-size = 'text-height'
+gui.toolbar-icon-style = 'default'
+guimgr.toolbar-groups = ['file',
+                         'clip',
+                         'search',
+                         'indent',
+                         'proj',
+                         'test',
+                         'debug']
+main.auto-rstrip-on-save = 'on-save'
+main.file-filters = file_filters({   u'All Source Files': ([], []),
+    u'C/C++ Files': ([], []),
+    'HTML and XML Files': ([(1, ('wildcard-filename', '*.html.mobi'))], []),
+    u'Hidden & Temporary Files': ([], []),
+    u'Python Files': ([], []),
+    'Unwanted': (   (),
+                    (   (1, ('wildcard-filename', 'bower_components')),
+                        (1, ('wildcard-directory', 'dist')),
+                        (1, ('wildcard-filename', '*.png')),
+                        (1, ('wildcard-directory', 'kibana')),
+                        (1, ('wildcard-directory', '.cache')),
+                        (1, ('wildcard-filename', '*.jpg')),
+                        (1, ('wildcard-directory', 'node_modules'))))})
+main.show-splash-screen = False
+proj.open-from-project-full-paths = False
