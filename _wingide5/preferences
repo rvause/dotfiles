@@ -1,6 +1,8 @@
 [user-preferences]
+consoles.wrap-long-lines = True
 debug.debug-probe-encoding = 'ascii'
 debug.prompt-to-restart-python-shell-debug = False
+debug.wrap-debug-probe = True
 edit.auto-edit-fixups = False
 edit.auto-edit-spaces = True
 edit.auto-edit-spaces-enforce = True
@@ -9,10 +11,11 @@ edit.autocomplete-keys = ['tab',
 edit.caret-color = (247,
                     137,
                     10)
-edit.caret-line-highlight = ((112,
-                              112,
-                              221),
+edit.caret-line-highlight = ((140,
+                              139,
+                              119),
                              50)
+edit.caret-width = 3
 edit.context-menu-groups = ['clip',
                             'nav',
                             'debug',
@@ -31,9 +34,9 @@ edit.show-line-numbers = True
 edit.snippets-in-autocompleter = False
 edit.syntax-formatting = {'PYTHON': {u'decorator': {'fore': '#FAA13A'}}}
 gui.all-editors-in-all-splits = False
-gui.keymap-override = {'Ctrl-8': 'flake8',
-                       'Ctrl-9': 'isort',
-                       'Ctrl-Shift-W': 'kill-buffer'}
+gui.keymap-override = {'Back': 'previous-document',
+                       'Ctrl-Shift-W': 'kill-buffer',
+                       'Forward': 'next-document'}
 gui.qt-color-palette = u'monokai'
 gui.qt-display-theme = ('selected-colors',
                         None,
