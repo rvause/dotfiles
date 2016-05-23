@@ -16,6 +16,3 @@
 [submodule "_vim/bundle/vim-flake8"]
 	path = _vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule "_vim/bundle/python-mode"]
-	path = _vim/bundle/python-mode
-	url = https://github.com/klen/python-mode.git
