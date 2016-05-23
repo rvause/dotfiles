@@ -1,4 +1,4 @@
-export TERMINAL=urxvt
+export TERMINAL=sakura
 srandrd /home/rvause/bin/detect_displays  # Update on VGA plug/unplug
 dunst &  # Notifications
 redshift &  # Easy on the eyes

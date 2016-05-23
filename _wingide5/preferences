@@ -71,3 +71,5 @@ main.file-filters = file_filters({   u'All Source Files': ([], []),
                         (1, ('wildcard-directory', 'node_modules'))))})
 main.show-splash-screen = False
 proj.open-from-project-full-paths = False
+versioncontrol.bzr.active = 'not-active'
+versioncontrol.git.active = 'not-active'
