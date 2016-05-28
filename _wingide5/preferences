@@ -1,4 +1,5 @@
 [user-preferences]
+consoles.auto-clear = True
 consoles.wrap-long-lines = True
 debug.debug-probe-encoding = 'ascii'
 debug.prompt-to-restart-python-shell-debug = False
