@@ -1,3 +1,18 @@
 # Files
 *.sw[nop]
 .netrwhist
+
+# Fish
+fish_history
+fishd.*
+_config/fish/conf.d
+_config/fish/functions/__*
+
+# Fish: fisherman
+_config/fish/functions/await.fish
+_config/fish/functions/fisher.fish
+_config/fish/functions/get_file_age.fish
+_config/fish/functions/last_job_id.fish
+_config/fish/functions/menu.fish
+_config/fish/functions/node.fish
+_config/fish/functions/npm.fish

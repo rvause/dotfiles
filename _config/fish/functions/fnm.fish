@@ -1,0 +1,1 @@
+/home/rvause/.config/fisherman/fnm/functions/fnm.fish
