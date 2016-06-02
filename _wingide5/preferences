@@ -23,8 +23,17 @@ edit.context-menu-groups = ['clip',
                             'comment',
                             'indent',
                             'script']
-edit.enable-folding = False
 edit.ensure-ending-eol-on-save = True
+edit.fold-mark-background-color = (39,
+                                   40,
+                                   34)
+edit.fold-mark-foreground-color = (129,
+                                   212,
+                                   129)
+edit.fold-trailing-whitespace = False
+edit.occurrence-color = (81,
+                         158,
+                         196)
 edit.other-split-type = 'default'
 edit.qt-display-font = u'Inconsolata,11'
 edit.qt-show-edge-markers = (1,
