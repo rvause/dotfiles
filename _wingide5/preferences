@@ -27,9 +27,9 @@ edit.ensure-ending-eol-on-save = True
 edit.fold-mark-background-color = (39,
                                    40,
                                    34)
-edit.fold-mark-foreground-color = (129,
-                                   212,
-                                   129)
+edit.fold-mark-foreground-color = (102,
+                                   217,
+                                   239)
 edit.fold-trailing-whitespace = False
 edit.occurrence-color = (81,
                          158,
@@ -68,7 +68,7 @@ guimgr.toolbar-groups = ['file',
 main.auto-rstrip-on-save = 'on-save'
 main.file-filters = file_filters({   u'All Source Files': ([], []),
     u'C/C++ Files': ([], []),
-    'HTML and XML Files': ([(1, ('wildcard-filename', '*.html.mobi'))], []),
+    'HTML and XML Files': ([(1, ('wildcard-filename', '*.mobi'))], []),
     u'Hidden & Temporary Files': ([], []),
     u'Python Files': ([], []),
     'Unwanted': (   (),
