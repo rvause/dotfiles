@@ -10,6 +10,7 @@ set __fish_git_prompt_color_upstream_behind red
 # Common vars
 set -x EDITOR vim
 set -x BROWSER chromium
+set -x LANG en_US.UTF-8
 
 # Secrets
 source ~/.secrets.fish
