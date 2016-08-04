@@ -170,6 +170,10 @@ bindsym $mod+Shift+w exec "scrot -u -q 90 '/home/rvause/Pictures/Screenshots/%Y-
 # lock
 bindsym XF86ScreenSaver exec "xautolock -locknow"
 
+# Float windows
+for_window [title="Do you want to leave this site?"] floating enable
+for_window [title="Do you want to reload this site?"] floating enable
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
