@@ -16,6 +16,8 @@ set -x LANG en_US.UTF-8
 source ~/.secrets.fish
 
 # Path
+set -x PUREBASIC_HOME /home/rvause/apps/purebasic
+set -x ANDROID_HOME /opt/android-sdk
 source ~/.config/fish/path.fish
 
 # virtualfish
