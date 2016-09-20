@@ -23,6 +23,7 @@ imap <C-W> <C-O><C-W>
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " Settings
+let python_highlight_all=1
 syntax on
 filetype on
 filetype plugin indent on
@@ -32,6 +33,7 @@ set background=dark
 set title
 set wildmenu
 set wildmode=full
+set encoding=utf-8
 
 set noerrorbells
 set vb t_vb=
@@ -115,7 +117,7 @@ autocmd FileType html,xhtml,xml,css,scss,mobi,jinja setlocal expandtab shiftwidt
 au BufRead,BufNewFile *.mobi set filetype=html
 
 " Python
-" au FileType python set omnifunc=pythoncomplete#Complete
+au FileType python set omnifunc=pythoncomplete#Complete
 au FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 cindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\]%\\@=%m
 
