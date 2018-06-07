@@ -19,3 +19,6 @@
 [submodule "_vim/bundle/YouCompleteMe"]
 	path = _vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "_vim/bundle/python-syntax"]
+	path = _vim/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
