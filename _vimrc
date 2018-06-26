@@ -67,7 +67,7 @@ set shiftround
 set matchpairs+=<:>
 set foldmethod=indent
 set foldlevel=99
-set colorcolumn=73,80
+set colorcolumn=73,80,100
 set mouse=a
 
 set noautowrite
@@ -94,12 +94,15 @@ set smarttab
 set hlsearch
 set incsearch
 
+set splitbelow
+set splitright
+
 if has("gui_running")
-    colorscheme wombat
+    colorscheme molokai
     set guioptions=
     set vb t_vb=
 else
-    colorscheme wombat256i
+    colorscheme molokai
     highlight ColorColumn ctermbg=8
 endif
 
@@ -155,7 +158,29 @@ let g:jedi#show_call_signatures = "0" " Disable annoying call signatures
 let g:SuperTabDefaultCompletionType = "context"
 
 " ctrlp
+" let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_switch_buffer=0
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_use_caching=0
+let g:ctrlp_show_hidden=1
+
 if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor " Use Ag over Grep
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'  " Use ag in CtrlP for listing files.
+  let g:ackprg='ag --vimgrep --case-sensitive'
+  let g:ctrlp_user_command='ag %s --nocolor --nogroup --hidden
+        \ --ignore .git
+        \ --ignore .svn
+        \ --ignore .hg
+        \ --ignore .DS_Store
+        \ --ignore .svg
+        \ --ignore "**/*.pyc"
+        \ --ignore node_modules,
+        \ --ignore bower_components
+        \ -g ""'
 endif
+
+" flake8
+let g:flake8_cmd = '/home/rvause/.virtualenvs/linting/bin/flake8'
+autocmd BufWritePost *.py call Flake8()
+
+let g:python_version_2=1
