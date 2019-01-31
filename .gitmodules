@@ -1,9 +1,6 @@
 [submodule "_vim/bundle/supertab"]
 	path = _vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "_vim/bundle/python-indent.vim"]
-	path = _vim/bundle/python-indent.vim
-	url = https://github.com/hattya/python-indent.vim.git
 [submodule "_vim/bundle/vim-indent-guides"]
 	path = _vim/bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
