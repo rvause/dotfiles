@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-FILES="_vimrc _vim _xinitrc _Xdefaults _config _taskrc"
+FILES="_xinitrc _Xdefaults _config _taskrc"
 BINFILES="$(pwd)/bin/*"
 
 for file in $FILES

@@ -3,7 +3,7 @@
 ### Setup
 
 ```
-git clone --recursive https://github.com/rvause/dotfiles.git ~/.dotfiles
+git clone https://github.com/rvause/dotfiles.git ~/.dotfiles
 ```
 
 Then link files.
